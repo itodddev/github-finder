@@ -9,7 +9,7 @@ const RepoItem = ({ repo }) => {
     </div>
   );
 };
-RepoItem.PropTypes = {
+RepoItem.propTypes = {
   repo: PropTypes.object.isRequired,
 };
 
