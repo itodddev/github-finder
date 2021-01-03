@@ -28,7 +28,7 @@ const GithubState = (props) => {
   } else {
     console.log('Prod: ' + process.env.NODE_ENV);
     console.log('id 1: ' + process.env.GITHUB_CLIENT_ID);
-    console.log('id 2: ' + GITHUB_CLIENT_ID);
+
     githubClientId = process.env.GITHUB_CLIENT_ID;
     githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
   }
