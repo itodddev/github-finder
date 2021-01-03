@@ -22,16 +22,11 @@ const GithubState = (props) => {
   let githubClientSecret;
 
   if (process.env.NODE_ENV !== 'production') {
-    console.log(process.env.NODE_ENV);
     githubClientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
     githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
   } else {
-    console.log('Prod: ' + process.env.NODE_ENV);
-    console.log('id 1: ' + process.env.REACT_APP_GITHUB_CLIENT_ID);
-    console.log('test');
-
-    githubClientId = process.env.GITHUB_CLIENT_ID;
-    githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
+    githubClientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
+    githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
   }
 
   const [state, dispatch] = useReducer(GithubReducer, initialState);
