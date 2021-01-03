@@ -29,6 +29,8 @@ const GithubState = (props) => {
     githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
   }
 
+  // test
+
   const [state, dispatch] = useReducer(GithubReducer, initialState);
 
   // Search Users
